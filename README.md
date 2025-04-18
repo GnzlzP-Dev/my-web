@@ -1,48 +1,30 @@
-# Astro Starter Kit: Basics
+# 🔥 ContraIncendios Medellín
 
-```sh
-npm create astro@latest -- --template basics
-```
+Sitio web desarrollado con [Astro](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/), diseñado para ofrecer servicios de inspección, prueba y mantenimiento a sistemas contraincendio en Medellín y el Valle de Aburrá.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚒 Servicios ofrecidos
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Inspección, prueba y mantenimiento de **paneles de detección de incendios**, redes y dispositivos.
+- Mantenimiento a **sistemas de extinción por agua**: bombas eléctricas y diésel, controladores, motores y redes hidráulicas.
+- Cumplimiento normativo y atención a empresas e instalaciones en todo el Valle de Aburrá.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🌐 Tecnologías
 
-## 🚀 Project Structure
+- [Astro](https://astro.build/) — Generador de sitios modernos y rápidos.
+- [Tailwind CSS](https://tailwindcss.com/) — Framework de estilos altamente personalizable.
+- [Netlify](https://www.netlify.com/) o [Vercel](https://vercel.com/) — Recomendado para despliegue.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📁 Estructura del proyecto
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+/ ├── public/ # Archivos estáticos ├── src/ │ ├── components/ # Componentes reutilizables (Navbar, Footer, etc.) │ ├── layouts/ # Layouts base │ ├── pages/ # Páginas (inicio, servicios, contacto, etc.) │ └── styles/ # Archivos CSS / Tailwind ├── astro.config.mjs # Configuración de Astro ├── tailwind.config.js # Configuración de Tailwind └── README.md # Este archivo
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📍 Enfoque local
 
-## 🧞 Commands
+Este sitio está optimizado para posicionamiento local SEO en Medellín, incluyendo keywords estratégicas, meta descripciones y enlaces a WhatsApp para mejorar conversión y visibilidad.
 
-All commands are run from the root of the project, from a terminal:
+## ✍️ Autor
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Desarrollado por [Tu nombre o empresa].
+📧 Contacto: servicios@contraincendiosmedellin.com
+📍 Medellín, Colombia
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

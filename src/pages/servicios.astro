@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+title: "Servicios de inspección, prueba y mantenimiento de sistemas contra incendios en Medellín";
+description: "Realizamos inspección, pruebas y mantenimiento de sistemas de detección y extinción de incendios con paneles, redes hidráulicas, bombas y dispositivos. Servicio en Medellín y alrededores.";
+---
+
+<Layout>
+  <div
+    class="bg-[url('/inspecman.jpg')] bg-cover bg-center text-white py-24 px-6 text-center h-[60vh] relative"
+  >
+    <div class="absolute inset-0 bg-black/25"></div>
+
+    <div
+      class="flex flex-col items-center justify-center h-full max-w-4xl mx-auto relative"
+    >
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Inspección, pruebas y mantenimiento
+      </h1>
+      <a
+        href="#contacto"
+        class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl text-lg transition"
+        >Solicita tu cotización gratis</a
+      >
+    </div>
+
+  </div>
+
+ <section class="py-20 px-6 max-w-5xl mx-auto space-y-16">
+
+    <!-- Detección -->
+    <div class="md:flex md:gap-12 items-start">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Sistemas de detección de incendios</h2>
+        <p class="mb-4">Realizamos inspección detallada, pruebas funcionales y mantenimiento de sistemas de detección de incendios, incluyendo:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Paneles de control y alarmas</li>
+          <li>Detectores de humo y temperatura</li>
+          <li>Estaciones manuales</li>
+          <li>Sirenas y luces estroboscópicas</li>
+          <li>Verificación de comunicación entre dispositivos</li>
+        </ul>
+        <p class="mt-4">Aseguramos el cumplimiento con la normatividad colombiana y el correcto funcionamiento del sistema en situaciones reales.</p>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <img src="/images/deteccion.jpg" alt="Sistema de detección de incendios" class="rounded-2xl shadow-md" />
+      </div>
+    </div>
+
+    <!-- Extinción -->
+    <div class="md:flex md:gap-12 items-start flex-row-reverse">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Sistemas de extinción con agua</h2>
+        <p class="mb-4">Inspeccionamos, probamos y damos mantenimiento a redes hidráulicas de extinción de incendios alimentadas por bombas eléctricas y diésel:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Bombas centrífugas eléctricas y diésel</li>
+          <li>Controladores, tableros de arranque y sistemas de respaldo</li>
+          <li>Red de tuberías, válvulas, gabinetes y mangueras</li>
+          <li>Pruebas de flujo, presión y funcionamiento</li>
+          <li>Mantenimiento preventivo y correctivo</li>
+        </ul>
+        <p class="mt-4">Nuestros servicios aseguran que el sistema esté listo ante una emergencia y cumpla con los estándares exigidos por entes reguladores.</p>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <img src="/images/extincion.jpg" alt="Sistema de extinción por agua" class="rounded-2xl shadow-md" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Beneficios -->
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Beneficios de nuestros servicios</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-left text-lg">
+        <ul class="space-y-3 list-none">
+          <li>✅ Cumplimiento de normativas y requisitos legales</li>
+          <li>✅ Reducción de riesgos y siniestros</li>
+          <li>✅ Documentación técnica y certificados</li>
+        </ul>
+        <ul class="space-y-3 list-none">
+          <li>✅ Equipos listos para responder ante emergencias</li>
+          <li>✅ Personal técnico capacitado</li>
+          <li>✅ Cobertura en Medellín y municipios cercanos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="text-center py-20 px-6">
+    <h2 class="text-3xl font-bold mb-4">¿Necesitas una inspección o mantenimiento?</h2>
+    <p class="text-lg mb-6">Cotiza con nosotros y asegura el buen estado de tus sistemas contra incendios.</p>
+    <a href="/#contacto" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl text-lg transition">Solicita tu cotización</a>
+  </section>
+</Layout>

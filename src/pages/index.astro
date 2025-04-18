@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { CldImage } from "astro-cloudinary";
+title: "Inspección y mantenimiento de sistemas contra incendios en Medellín"
+description: "Servicios profesionales de inspección, pruebas y mantenimiento de sistemas contra incendios en Medellín y alrededores. Cumple con la normativa colombiana y protege tu empresa hoy."
+
+---
+<Layout>
+<!-- <main>
+    <div class="relative">
+      // <CldImage src="sensores-bg" height=100% class="absolute" alt="" /> 
+      <h1>Protege tu empresa con expertos en sistemas contra incendios en Medellín </h1>
+      <h2>Realizamos inspecciones, pruebas y mantenimiento certificado de sistemas contra incendios, cumpliendo con la normativa colombiana.</h2>
+      <button>Solicita una cotización sin costo →</button>
+    </div>
+    <p class="">
+      En MANPEG, nos especializamos en la inspección, prueba, mantenimiento e
+      instalación de sistemas contra incendios, cumpliendo estrictamente con las
+      normas NFPA 25, NFPA 72 y las regulaciones colombianas. Nuestro compromiso
+      es garantizar tu seguridad y tranquilidad en todo momento.
+    </p>
+    <a href="/contacto"><button>Solicita una corización</button></a>
+    <a href="/servicios"><button>Conoce nuestros servicios</button></a>
+
+    <section class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h2>Servicios</h2>
+      <ul>
+        <li class="item1">Cumplimiento normativo.</li>
+        <li class="item2">Equipo técnico certificado.</li>
+        <li class="item3">Atención personalizada.</li>
+      </ul>
+    </section>
+  </main> --> 
+
+
+<main class="bg-white text-gray-800 mt-[10vh]">
+  <!-- Hero principal -->
+  <section class="bg-[url('/inspecman.jpg')] bg-cover bg-center text-white py-24 px-6 text-center h-[80vh] relative">
+    <div class="absolute inset-0 bg-black/25"></div>
+    <!-- <div class="flex flex-col items-center justify-center h-full px-24 relative">-->
+      <div class="flex flex-col items-center  justify-center h-full max-w-4xl mx-auto relative">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Protege tu empresa con expertos en sistemas contra incendios en Medellín</h1>
+      <p class="text-lg md:text-xl mb-6">Inspección, pruebas y mantenimiento certificados para redes hidráulicas y sistemas de detección.</p>
+      <a href="#contacto" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl text-lg transition">Solicita tu cotización gratis</a>
+    </div>
+  </section>
+
+  <!-- Servicios rápidos -->
+  <section class="py-16 px-6 bg-gray-100">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Nuestros servicios</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">🧪 Inspecciones técnicas</h3>
+          <p>Verificación del estado y cumplimiento de sistemas contraincendios según normativa colombiana.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">💧 Pruebas hidráulicas</h3>
+          <p>Simulación de condiciones reales para garantizar el funcionamiento de redes, válvulas y bombas.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">🧯 Mantenimiento de equipos</h3>
+          <p>Extintores, gabinetes, mangueras, sistemas de detección y alarmas siempre en óptimas condiciones.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">📋 Informes y certificación</h3>
+          <p>Documentación detallada con hallazgos, recomendaciones y certificados de cumplimiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Productos -->
+ <section class="py-16 px-6">
+  <div class="max-w-5xl mx-auto text-center grid lg:grid-cols-2 gap-8 sm:grid-col-2">
+    <div>
+      <h2> Paneles de detección y alarma</h2>
+      <p>Estos sistemas son cruciales para la protección de vidas y bienes, ya que permiten una respuesta rápida ante situaciones de emergencia.</p>
+    </div>
+    <div>
+      <CldImage
+      src="panel-y-sensores"
+      ></CldImage>
+      <!-- <img src="      " alt="carrusel de paneles de sistemas de detección"> -->
+    </div>
+  </div>
+ </section>
+ <section class="py-16 px-6">
+  <div class="max-w-5xl mx-auto text-center grid lg:grid-cols-2 sm:grid-col-2 gap-8">
+    <div>
+      <img src="/inspec.webp     " alt="carrusel de controladores de bombas">
+    </div>
+    <div>
+      <h2> Controladores de bombas</h2>
+      <p>Los sistemas de extinción a base de agua son fundamentales para la protección contra incendios en una amplia variedad de entornos.</p>
+    </div>
+  </div>
+ </section>
+  <!-- Por qué elegirnos -->
+  <section class="py-16 px-6">
+    <div class=" max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">¿Por qué elegirnos?</h2>
+      <!-- <ul class="space-y-8 text-left text-lg list-none"> -->
+        <ul class="grid gap-5 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 text-left text-lg list-none"> 
+        <li><div>✅</div> Personal capacitado y con experiencia en normativa nacional</li>
+        <li><div>✅</div> Servicio rápido y confiable en Medellín y municipios cercanos</li>
+        <li><div>✅</div> Informes detallados para cumplir con bomberos e inspecciones</li>
+        <li><div>✅</div> Atención personalizada y precios competitivos</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Cobertura -->
+  <section class="bg-red-600 text-white py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Atendemos Medellín y alrededores</h2>
+      <p class="text-lg">Prestamos servicios en Medellín, Itagüí, Envigado, Sabaneta, Bello, La Estrella, Caldas y más.</p>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">¿Listo para inspeccionar tu sistema contra incendios?</h2>
+    <p class="text-lg mb-6">Cumple con los requisitos legales y garantiza la seguridad de tu equipo e instalaciones.</p>
+    <a href="#contacto" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl text-lg transition">Contáctanos ahora</a>
+  </section>
+</main>
+
+</Layout>

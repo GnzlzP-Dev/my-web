@@ -1,0 +1,35 @@
+---
+import { ClientRouter, fade, slide } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import GlobalStyles from "../components/GlobalStyles.astro";
+---
+
+<html lang="es|">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Protegemos lo que más importa: Sistemas Contra Incendios Certificados"
+    />
+    <meta
+      name="keywords"
+      content="sistemas contra incendios, protección contra incendios, sistemas contra incendios certificados"
+    />
+    <meta name="author" content="Ing. Pedro Gonzalez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <title>My Web</title>
+    <GlobalStyles />
+    <ClientRouter />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

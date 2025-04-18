@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<>
+<footer class="bg-gray-900 text-white px-6 py-12">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+    
+    <!-- Logo + Descripción -->
+    <div>
+      <h2 class="text-xl font-bold mb-2">ContraIncendios Medellín</h2>
+      <p class="text-sm">
+        Servicios profesionales en inspección, prueba y mantenimiento de sistemas de detección y extinción de incendios. Protegemos vidas y patrimonios en Medellín y el Valle de Aburrá.
+      </p>
+    </div>
+
+    <!-- Enlaces -->
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Navegación</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="/" class="hover:underline">Inicio</a></li>
+        <li><a href="/servicios" class="hover:underline">Servicios</a></li>
+        <li><a href="/nosotros" class="hover:underline">Nosotros</a></li>
+        <li><a href="/contacto" class="hover:underline">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Contacto</h3>
+      <ul class="text-sm space-y-1">
+        <li>📍 Medellín, Antioquia</li>
+        <li>📞 +57 300 123 4567</li>
+        <li>📧 servicios@contraincendiosmedellin.com</li>
+        <li>
+          💬 <a href="https://wa.me/573001234567" class="hover:underline text-red-400">WhatsApp directo</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Horarios -->
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Horario de atención</h3>
+      <p class="text-sm">
+        Lunes a viernes: 8:00 a.m. - 5:30 p.m. <br />
+        Sábados: 8:00 a.m. - 1:00 p.m.
+      </p>
+    </div>
+  </div>
+
+  <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+    © {new Date().getFullYear()} ContraIncendios Medellín. Todos los derechos reservados.
+  </div>
+</footer>
+
+</>

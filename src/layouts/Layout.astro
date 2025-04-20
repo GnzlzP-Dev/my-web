@@ -3,6 +3,11 @@ import { ClientRouter, fade, slide } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import GlobalStyles from "../components/GlobalStyles.astro";
+
+ title : "Inicio - Sistemas Contraincendio Medellín"
+ description : "Inspección, prueba y mantenimiento de sistemas contraincendio en Medellín. Servicio profesional y certificado."
+ web : "https://manpeg.netlify.app/"
+
 ---
 
 <html lang="es|">
@@ -11,7 +16,7 @@ import GlobalStyles from "../components/GlobalStyles.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Protegemos lo que más importa: Sistemas Contra Incendios Certificados"
+      content={description}
     />
     <meta
       name="keywords"
@@ -20,10 +25,17 @@ import GlobalStyles from "../components/GlobalStyles.astro";
     <meta name="author" content="Ing. Pedro Gonzalez" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#1a1a1a" />
+    <link rel="canonical" href={web} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={web} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/NFPA_logo.svg" />
 
     <link rel="icon" href="/favicon.ico" />
 
-    <title>My Web</title>
+    <title>{title}</title>
     <GlobalStyles />
     <ClientRouter />
   </head>

@@ -1,10 +1,16 @@
 ---
+const title= "404 - Página no encontrada";
+const description= "Página no encontrada - Sistemas contra incendios en Medellín";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-  <div>
-    <h2>404</h2>
-    <p>Page not found</p>
-  </div>
+<Layout {title} {description}>
+  <main class="flex flex-col items-center justify-center min-h-screen text-center px-6 py-16 bg-gray-100">
+    <h1 class="text-6xl font-bold text-red-600 mb-4">404</h1>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-2">404 - Página no encontrada</h2>
+    <p class="text-gray-600 mb-6">Página no encontrada - Sistemas contra incendios en Medellín</p>
+    <a href="/" class="inline-block px-6 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition">
+      Volver al inicio
+    </a>
+  </main>
 </Layout>

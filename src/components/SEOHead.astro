@@ -1,0 +1,52 @@
+---
+// Componente centralizado para meta tags SEO mejorados
+const {
+  title = "MANPEG - Sistemas Contra Incendios en Medellín",
+  description = "Servicios profesionales de inspección, pruebas y mantenimiento de sistemas contra incendios en Medellín y alrededores. Cumple con la normativa colombiana.",
+  canonical = "https://manpeg.netlify.app/",
+  ogImage = "https://manpeg.netlify.app/og-image.jpg",
+  ogType = "website",
+} = Astro.props;
+
+const siteName = "MANPEG - Sistemas Contra Incendios";
+---
+
+<!-- Meta Tags Básicos -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content={description} />
+<meta name="keywords" content="sistemas contra incendios Medellín, inspección sistemas contraincendios, mantenimiento sistemas contra incendios, pruebas hidráulicas Medellín, detección de incendios, extinción de incendios, NFPA 25, NFPA 72, bombas contraincendios, certificación sistemas contra incendios" />
+<meta name="author" content="Ing. Pedro Gonzalez" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#dc2626" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonical} />
+
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="nV6kK9DET_NAEGp0jxi7WH_KUceFMu-250G358rA18I" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:locale" content="es_CO" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonical} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- Favicon y Manifest -->
+<link rel="icon" href="/icon-flame.png" />
+<link rel="manifest" href="/manifest.json" />
+
+<!-- Title -->
+<title>{title}</title>

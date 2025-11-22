@@ -1,0 +1,170 @@
+---
+// Datos estructurados JSON-LD para SEO
+const { type = "home" } = Astro.props;
+
+const baseUrl = "https://manpeg.netlify.app";
+
+// LocalBusiness Schema - Información de la empresa
+const localBusiness = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${baseUrl}/#organization`,
+  "name": "MANPEG - Sistemas Contra Incendios",
+  "description": "Empresa especializada en inspección, pruebas y mantenimiento de sistemas contra incendios en Medellín y alrededores",
+  "url": baseUrl,
+  "logo": `${baseUrl}/icons-flame-logo.png`,
+  "image": `${baseUrl}/og-image.jpg`,
+  "telephone": "+573043179349",
+  "email": "servicios.manpeg@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Medellín",
+    "addressRegion": "Antioquia",
+    "addressCountry": "CO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "6.2442",
+    "longitude": "-75.5812"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Medellín"
+    },
+    {
+      "@type": "City",
+      "name": "Itagüí"
+    },
+    {
+      "@type": "City",
+      "name": "Envigado"
+    },
+    {
+      "@type": "City",
+      "name": "Sabaneta"
+    },
+    {
+      "@type": "City",
+      "name": "Bello"
+    },
+    {
+      "@type": "City",
+      "name": "La Estrella"
+    },
+    {
+      "@type": "City",
+      "name": "Caldas"
+    }
+  ],
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-13:00",
+  "sameAs": [
+    "https://wa.me/573043179349"
+  ]
+};
+
+// Service Schema - Servicios ofrecidos
+const services = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Inspección y Mantenimiento de Sistemas Contra Incendios",
+  "provider": {
+    "@id": `${baseUrl}/#organization`
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Medellín",
+    "containedIn": {
+      "@type": "State",
+      "name": "Antioquia"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de Protección Contra Incendios",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Inspección de Sistemas de Detección",
+          "description": "Verificación del estado y cumplimiento de sistemas contraincendios según normativa colombiana"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pruebas Hidráulicas",
+          "description": "Simulación de condiciones reales para garantizar el funcionamiento de redes, válvulas y bombas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mantenimiento de Equipos Contraincendios",
+          "description": "Extintores, gabinetes, mangueras, sistemas de detección y alarmas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Certificación y Documentación",
+          "description": "Informes detallados con hallazgos, recomendaciones y certificados de cumplimiento"
+        }
+      }
+    ]
+  }
+};
+
+// BreadcrumbList Schema - Navegación
+const getBreadcrumbs = (type: string) => {
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": baseUrl
+      }
+    ]
+  };
+
+  if (type === "servicios") {
+    breadcrumbs.itemListElement.push({
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Servicios",
+      "item": `${baseUrl}/servicios`
+    });
+  } else if (type === "nosotros") {
+    breadcrumbs.itemListElement.push({
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Nosotros",
+      "item": `${baseUrl}/nosotros`
+    });
+  } else if (type === "contacto") {
+    breadcrumbs.itemListElement.push({
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contacto",
+      "item": `${baseUrl}/contacto`
+    });
+  }
+
+  return breadcrumbs;
+};
+
+const breadcrumbs = getBreadcrumbs(type);
+---
+
+<!-- Datos Estructurados JSON-LD -->
+<script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
+<script type="application/ld+json" set:html={JSON.stringify(services)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />

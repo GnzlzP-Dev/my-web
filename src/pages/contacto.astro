@@ -1,10 +1,14 @@
 ---
-title: "Contáctanos - Sistemas contra incendios en Medellín";
-description: "Solicita una cotización o agéndanos para una inspección...";
 import Layout from "../layouts/Layout.astro";
+
+// SEO Props
+const title = "Contáctanos - Cotiza Sistemas Contra Incendios en Medellín | MANPEG";
+const description = "Solicita una cotización sin costo para inspección, pruebas y mantenimiento de sistemas contra incendios en Medellín. Atención rápida y profesional.";
+const canonical = "https://manpeg.netlify.app/contacto";
+const pageType = "contacto";
 ---
 
-<Layout>
+<Layout title={title} description={description} canonical={canonical} pageType={pageType}>
   <main class="bg-white text-gray-900 mt-[10vh]">
     <!-- Hero contacto -->
     <section class="bg-gray-100 py-16 px-6 text-center">
@@ -130,6 +134,7 @@ import Layout from "../layouts/Layout.astro";
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
+            title="Ubicación de MANPEG en Medellín, Antioquia"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>

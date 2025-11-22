@@ -1,11 +1,14 @@
 ---
-title: "Sobre nosotros - Expertos en sistemas contra incendios en Medellín"
-description: "Conoce quiénes somos, nuestra experiencia y compromiso en inspección, pruebas y mantenimiento de sistemas contra incendios en Medellín y alrededores."
-
 import Layout from "../layouts/Layout.astro";
+
+// SEO Props
+const title = "Sobre Nosotros - Expertos en Sistemas Contra Incendios en Medellín | MANPEG";
+const description = "Conoce quiénes somos, nuestra experiencia y compromiso en inspección, pruebas y mantenimiento de sistemas contra incendios en Medellín y alrededores.";
+const canonical = "https://manpeg.netlify.app/nosotros";
+const pageType = "nosotros";
 ---
 
-<Layout>
+<Layout title={title} description={description} canonical={canonical} pageType={pageType}>
   <main class="bg-white text-gray-900 mt-[10vh]">
     <!-- Hero -->
     <section class="bg-gray-100 py-16 px-6 text-center">
@@ -54,6 +57,7 @@ import Layout from "../layouts/Layout.astro";
       <p class="text-lg">
         Atendemos Medellín, Itagüí, Envigado, Bello, Sabaneta, La Estrella, Caldas y otros municipios del Valle de Aburrá.
       </p>
+      <p class="mt-6 text-lg">Conoce nuestros <a href="/servicios" class="text-red-600 hover:underline font-semibold">servicios especializados</a>.</p>
     </section>
   
     <!-- CTA -->

@@ -1,10 +1,14 @@
 ---
-title: "Servicios de inspección, prueba y mantenimiento de sistemas contra incendios en Medellín";
-description: "Realizamos inspección, pruebas y mantenimiento de sistemas de detección y extinción de incendios con paneles, redes hidráulicas, bombas y dispositivos. Servicio en Medellín y alrededores.";
 import Layout from "../layouts/Layout.astro";
+
+// SEO Props
+const title = "Servicios de Inspección y Mantenimiento de Sistemas Contra Incendios | MANPEG Medellín";
+const description = "Realizamos inspección, pruebas y mantenimiento de sistemas de detección y extinción de incendios con paneles, redes hidráulicas, bombas y dispositivos. Servicio en Medellín y alrededores.";
+const canonical = "https://manpeg.netlify.app/servicios";
+const pageType = "servicios";
 ---
 
-<Layout>
+<Layout title={title} description={description} canonical={canonical} pageType={pageType}>
   <div
     class="bg-[url('/inspecman.jpg')] bg-cover bg-center text-white py-24 px-6 text-center h-[60vh] relative"
   >
@@ -42,7 +46,7 @@ import Layout from "../layouts/Layout.astro";
         <p class="mt-4">Aseguramos el cumplimiento con la normatividad colombiana y el correcto funcionamiento del sistema en situaciones reales.</p>
       </div>
       <div class="md:w-1/2 mt-8 md:mt-0">
-        <img src="/images/deteccion.jpg" alt="Sistema de detección de incendios" class="rounded-2xl shadow-md" />
+        <img src="/images/deteccion.jpg" alt="Sistema de detección de incendios con panel de control, detectores de humo y alarmas en Medellín" class="rounded-2xl shadow-md" loading="lazy" />
       </div>
     </div>
 
@@ -61,7 +65,7 @@ import Layout from "../layouts/Layout.astro";
         <p class="mt-4">Nuestros servicios aseguran que el sistema esté listo ante una emergencia y cumpla con los estándares exigidos por entes reguladores.</p>
       </div>
       <div class="md:w-1/2 mt-8 md:mt-0">
-        <img src="/images/extincion.jpg" alt="Sistema de extinción por agua" class="rounded-2xl shadow-md" />
+        <img src="/images/extincion.jpg" alt="Sistema de extinción por agua con bombas contraincendios, tuberías y válvulas en Medellín" class="rounded-2xl shadow-md" loading="lazy" />
       </div>
     </div>
 
@@ -83,6 +87,7 @@ import Layout from "../layouts/Layout.astro";
           <li>✅ Cobertura en Medellín y municipios cercanos</li>
         </ul>
       </div>
+      <p class="mt-8 text-lg">Conoce más <a href="/nosotros" class="text-red-600 hover:underline font-semibold">sobre nosotros</a> y nuestro equipo.</p>
     </div>
   </section>
 

@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { CldImage } from "astro-cloudinary";
 
 // SEO Props
 const title = "Inspección y Mantenimiento de Sistemas Contra Incendios en Medellín | MANPEG";
@@ -55,12 +54,14 @@ const pageType = "home";
       <p>Estos sistemas son cruciales para la protección de vidas y bienes, ya que permiten una respuesta rápida ante situaciones de emergencia.</p>
     </div>
     <div>
-      <CldImage
-      src="panel-y-sensores"
-      alt="Panel de control y sensores de detección de incendios certificados NFPA"
-      width="600"
-      height="400"
-      ></CldImage>
+      <img 
+        src="/panel-y-sensores.jpg" 
+        alt="Panel de control y sensores de detección de incendios certificados NFPA"
+        width="600"
+        height="400"
+        loading="lazy"
+        class="rounded-lg shadow-md"
+      >
     </div>
   </div>
  </section>

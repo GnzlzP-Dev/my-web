@@ -6,38 +6,48 @@ import GlobalStyles from "../components/GlobalStyles.astro";
 import SEOHead from "../components/SEOHead.astro";
 import StructuredData from "../components/StructuredData.astro";
 import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import GoogleTagManager from "../components/GoogleTagManager.astro";
 
 // Props con valores por defecto mejorados
-const { 
+const {
   title = "MANPEG - Sistemas Contra Incendios en Medellín",
   description = "Servicios profesionales de inspección, pruebas y mantenimiento de sistemas contra incendios en Medellín y alrededores. Cumple con la normativa colombiana.",
   canonical = "https://manpeg.netlify.app/",
   ogImage = "https://manpeg.netlify.app/og-image.jpg",
   ogType = "website",
-  pageType = "home"
+  pageType = "home",
 } = Astro.props;
 ---
 
 <html lang="es">
   <head>
+    <GoogleTagManager />
     <!-- SEO Meta Tags Mejorados -->
-    <SEOHead 
+    <SEOHead
       title={title}
       description={description}
       canonical={canonical}
       ogImage={ogImage}
       ogType={ogType}
     />
-    
+
     <!-- Datos Estructurados JSON-LD -->
     <StructuredData type={pageType} />
-    
+
     <!-- Estilos Globales y Router -->
     <GlobalStyles />
     <ClientRouter />
-    <GoogleAnalytics />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NNXQX8NC"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
     <Header />
     <main>
       <slot />
